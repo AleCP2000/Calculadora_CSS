@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        document.write("Estoy fuera de una función <br>");
+
+        //FORMA 1
+        function cutie_pie(){
+            document.write("Soy un mensaje dentro de una función <br>");
+        }
+        //LLAMAR O INVOCAR METODO
+        cutie_pie();
+
+        //FORMA 2
+        function ej2(){
+            let msj = "Estoy dentro de una función usando return <br>";
+            return msj;
+        }
+
+        document.write(ej2());
+
+        //FORMA 3
+        function ej3(n1, n2){  //parametros
+            let suma = n1 + n2;
+            return suma;
+        }
+        document.write("La suma es "+ ej3(3,6)); //argumentos
+
+        //EJERCICIO
+        function datos(nombre, apellido, edad, tel){
+
+            document.write(`<br>Su nombre completo es ${nombre} apellido ${apellido} edad ${edad} y tel ${tel}`);
+
+        }
+        datos("Claudia", "Swift", 23, "7744-3200");
+    </script>    
+</body>
+</html>
